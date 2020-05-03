@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holy grail</title>
+</head>
+<!-- flex-grow 父容器還有剩餘空間，該如何分配剩餘空間，預設0 -->
+<!-- 
+父容器 500px
+三個子元素 100px 150px 100px
+remain is 150px
+子元素 flex-grow 1 2 3
+
+150 * 1/6 =25px total -> 125px
+150 * 2/6 =50px total -> 200px
+150 * 3/6 =75px total -> 175px
+ -->
+<style>
+  * {
+    box-sizing: border-box;
+    border: solid 1px;
+  }
+  header {
+    height: 60px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  main {
+    /* Take remain height */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+  }
+  aside {
+    width: 25%;
+  }
+  article {
+    flex-grow: 1;
+  }
+  nav {
+    width: 20%;
+  }
+
+  footer {
+    height: 50px;
+  }
+</style>
+<body>
+  <!-- layout the left sidebar, main content and right sidebar-->
+  <div class="container">
+    <header>
+      header....
+    </header>
+    <main>
+      <!-- Left sidebar -->
+      <aside>
+          Left siderbar
+      </aside>
+      <!-- main content -->
+      <article>
+        main content
+      </article>
+      <!-- Right sidebar -->
+      <nav>
+        Right sidebar
+      </nav>
+    </main>
+    <footer>
+      footer 
+    </footer>
+  </div>
+</body>
+</html>
