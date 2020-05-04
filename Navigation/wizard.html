@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+    }
+    .step_container {
+      /* Make all step the same width */
+      flex: 1;
+    }
+    .center_content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .left_connector {
+      flex: 1;
+      height: 1px;
+      background:rgba(0, 0, 0, .3);
+    }
+    .step_number {
+      align-items: center;
+      display:flex;
+      justify-content: center;
+      background: rgba(0,0,0,.3);
+      border-radius: 9999px;
+      height: 32px;
+      width: 32px;
+
+    }
+    .right_connector {
+      flex: 1;
+      height: 1px;
+      background-color: rgba(0, 0, 0, .3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- step -->
+    <div class="step_container">
+      <div class="center_content">
+        <div class="left_connector"></div>
+        <div class="step_number">1</div>
+        <div class="right_connector"></div>
+      </div>
+      <div> some text...</div>
+    </div>
+
+    <div class="step_container">
+      <div class="center_content">
+        <div class="left_connector"></div>
+        <div class="step_number">2</div>
+        <div class="right_connector"></div>
+      </div>
+      <div> some text...</div>
+    </div>
+  </div>
+</body>
+</html>
