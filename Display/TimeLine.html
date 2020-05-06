@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Line</title>
+</head>
+<style>
+  .container {
+    position: relative;
+  }
+  .left_vertical_line {
+    border-right: 2px solid #aaa;
+    position: absolute;
+    left: 16px;
+    top: 0px;
+    height: 100%;
+  }
+  .line_item_container {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  .item {
+    margin-bottom: 8px;
+  }
+  .circle_title {
+    display: flex;
+    align-items: center;
+  }
+  .circle {
+    background:rgb(170, 170, 170);
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+  }
+  .title {
+    flex: 1;
+    margin-left: 16px;
+  }
+  .description {
+    margin-left: 48px;
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="left_vertical_line"></div>
+      <ul class="line_item_container">
+        <li class="item">
+            <div class="circle_title">
+              <div class="circle"></div>
+              <div class="title">
+                我是標題
+              </div>
+            </div>
+            <div class="description">
+              敘述敘述敘述敘述敘述敘述敘述敘述
+              敘述敘述敘述敘述敘述敘述敘述敘述
+              敘述敘述敘述敘述敘述敘述敘述敘述
+            </div>
+        </li>
+        <li class="item">
+          <div class="circle_title">
+            <div class="circle"></div>
+            <div class="title">
+              我是標題
+            </div>
+          </div>
+          <div class="description">
+            敘述敘述敘述敘述敘述敘述敘述敘述
+            敘述敘述敘述敘述敘述敘述敘述敘述
+            敘述敘述敘述敘述敘述敘述敘述敘述
+          </div>
+      </li>
+      </ul>
+  </div>
+</body>
+</html>
