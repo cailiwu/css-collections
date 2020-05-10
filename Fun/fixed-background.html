@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed background</title>
+  <style>
+    /* <!-- 背景不跟著滑鼠滑動而移動 --> */
+    body, html, main {
+    /* important */
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    }
+    .cd-fixed-bg {
+      min-height: 100%;
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .cd-fixed-bg.cd-bg-1 {
+      background-image: url('img.jpg');
+    }
+    .cd-fixed-bg.cd-bg-2 {
+      background-image: url('img2.jpeg');
+    }
+    .cd-scrolling-bg {
+      min-height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="cd-fixed-bg cd-bg-1">
+      <!-- <h1>標題</h1> -->
+    </div>
+    <div class="cd-scrolling-bg cd-color-1">
+      <div class="cd-container">
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      </div>
+    </div>
+    <div class="cd-fixed-bg cd-bg-2">
+      <h1>標題</h1>
+    </div>
+    <div class="cd-scrolling-bg cd-color-2">
+      <div class="cd-container">
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      </div>
+    </div>
+  </main>
+</body>
+</html>
